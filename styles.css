@@ -21,7 +21,7 @@ header {
 
 /* Text-based logo styling */
 header h1 {
-  font-family: 'Lora', serif; /* Elegant serif font */
+  font-family: 'Lucida Handwriting', cursive; /* Change the font to Lucida Handwriting */
   font-size: 3rem; /* Large text for logo */
   color: #fff;
   letter-spacing: 3px; /* Spacing between letters */
