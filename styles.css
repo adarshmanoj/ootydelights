@@ -5,36 +5,36 @@
   box-sizing: border-box;
 }
 
-/* Styling for the body */
+/* Body Styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #f1f1f1; /* Light Beige background */
+  color: #333; /* Dark text for readability */
 }
 
-/* Header styling with a text-based logo */
+/* Header Styling */
 header {
-  background-color: #27ae60; /* Green color */
+  background-color: #27ae60; /* Primary green color */
   padding: 20px 0;
   text-align: center;
 }
 
 /* Text-based logo styling */
 header h1 {
-  font-family: 'Lucida Handwriting', cursive; /* Change the font to Lucida Handwriting */
-  font-size: 3rem; /* Large text for logo */
+  font-family: 'Lucida Handwriting', cursive; 
+  font-size: 3rem;
   color: #fff;
-  letter-spacing: 3px; /* Spacing between letters */
-  text-transform: uppercase; /* Capitalize all letters */
+  letter-spacing: 3px;
+  text-transform: uppercase;
   font-weight: bold;
-  background: linear-gradient(90deg, #2ecc71, #27ae60); /* Gradient effect */
-  -webkit-background-clip: text; /* Clip the gradient to text */
-  color: transparent; /* Set text color to transparent */
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  -webkit-background-clip: text;
+  color: transparent;
   padding: 10px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Navigation styling */
+/* Navigation Styling */
 nav ul {
   list-style: none;
   display: flex;
@@ -53,10 +53,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #45a049;
+  background-color: #f39c12; /* Golden Yellow for hover effect */
 }
 
-/* Section styling */
+/* Section Styling */
 section {
   padding: 20px;
   text-align: center;
@@ -64,12 +64,12 @@ section {
 }
 
 h2 {
-  color: #27ae60;
+  color: #27ae60; /* Green color for headers */
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-/* Styling for product list */
+/* Product List Styling */
 .product-list {
   display: flex;
   justify-content: center;
@@ -97,16 +97,17 @@ h2 {
 }
 
 .product h3 {
-  color: #333;
+  color: #333; /* Dark text for product name */
   font-size: 1.2rem;
   margin-top: 10px;
 }
 
 .product:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05); /* Zoom effect */
+  border-color: #f39c12; /* Golden Yellow on hover for effect */
 }
 
-/* Contact form styling */
+/* Contact Form Styling */
 form {
   display: flex;
   flex-direction: column;
@@ -127,26 +128,26 @@ input, textarea, button {
 }
 
 button {
-  background-color: #27ae60;
+  background-color: #27ae60; /* Green button */
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #2ecc71;
+  background-color: #2ecc71; /* Lighter green on hover */
 }
 
-/* Footer styling */
+/* Footer Styling */
 footer {
   text-align: center;
-  background-color: #27ae60;
+  background-color: #27ae60; /* Green footer */
   color: white;
   padding: 20px;
   margin-top: 30px;
 }
 
-/* Mobile responsiveness */
+/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   /* Adjust logo font size */
   header h1 {
@@ -192,7 +193,7 @@ footer {
   }
 }
 
-/* Tablet responsiveness */
+/* Tablet Responsiveness */
 @media screen and (max-width: 1024px) {
   /* Adjust logo font size */
   header h1 {
