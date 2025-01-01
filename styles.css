@@ -145,3 +145,62 @@ footer {
   padding: 20px;
   margin-top: 30px;
 }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjust logo font size */
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Stack navigation items vertically */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Adjust section padding and font size */
+  section {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Adjust product list layout */
+  .product-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Adjust product width */
+  .product {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  /* Adjust form width */
+  form {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  /* Make footer text slightly smaller */
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media screen and (max-width: 1024px) {
+  /* Adjust logo font size */
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  /* Adjust product width */
+  .product {
+    width: 45%;
+  }
+}
