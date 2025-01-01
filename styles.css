@@ -14,23 +14,19 @@ body {
 
 /* Header Styling */
 header {
-  background-color: #1e7f38; /* Dark green for the header */
+  background-color: #000; /* Black background */
   padding: 20px 0;
   text-align: center;
 }
 
 /* Text-based logo styling */
 header h1 {
-  font-family: 'Lucida Handwriting', cursive; 
-  font-size: 3.5rem;
+  font-family: 'Ananda', cursive; /* Ananda Black font */
+  font-size: 4rem;
   color: white; /* White color for the text */
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   font-weight: bold;
-  background: linear-gradient(90deg, #f1c40f, #1e7f38); /* Yellow to green gradient */
-  -webkit-background-clip: text;
-  color: transparent;
-  padding: 10px;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow to make it pop */
   animation: fadeIn 2s ease-in-out; /* Smooth fade-in effect */
 }
@@ -108,116 +104,4 @@ h2 {
 .product:hover {
   transform: scale(1.05); /* Zoom effect */
   border-color: #f1c40f; /* Yellow border on hover */
-}
-
-/* Contact Form Styling */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-input, textarea, button {
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-button {
-  background-color: #1e7f38; /* Green button */
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #f1c40f; /* Yellow on hover */
-  color: #333; /* Dark text when hovering */
-}
-
-/* Footer Styling */
-footer {
-  text-align: center;
-  background-color: #1e7f38; /* Green footer */
-  color: white;
-  padding: 20px;
-  margin-top: 30px;
-}
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-  /* Adjust logo font size */
-  header h1 {
-    font-size: 2.5rem;
-  }
-
-  /* Stack navigation items vertically */
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* Adjust section padding and font size */
-  section {
-    padding: 15px;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  /* Adjust product list layout */
-  .product-list {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  /* Adjust product width */
-  .product {
-    width: 80%;
-    margin: 10px auto;
-  }
-
-  /* Adjust form width */
-  form {
-    width: 90%;
-    margin: 10px auto;
-  }
-
-  /* Make footer text slightly smaller */
-  footer p {
-    font-size: 0.9rem;
-  }
-}
-
-/* Tablet Responsiveness */
-@media screen and (max-width: 1024px) {
-  /* Adjust logo font size */
-  header h1 {
-    font-size: 2.8rem;
-  }
-
-  /* Adjust product width */
-  .product {
-    width: 45%;
-  }
-}
-
-/* Keyframe for the fade-in effect */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
