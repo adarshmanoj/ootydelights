@@ -1,4 +1,4 @@
-/* Resetting margins, paddings, and box-sizing for consistency */
+/* Reset margins, paddings, and box-sizing for consistency */
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +8,13 @@
 /* Body Styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f1f1f1; /* Light Beige background */
+  background-color: #f9f4e6; /* Light beige background */
   color: #333; /* Dark text for readability */
 }
 
 /* Header Styling */
 header {
-  background-color: #27ae60; /* Primary green color */
+  background-color: #1e7f38; /* Dark green */
   padding: 20px 0;
   text-align: center;
 }
@@ -24,14 +24,14 @@ header h1 {
   font-family: 'Lucida Handwriting', cursive; 
   font-size: 3rem;
   color: #fff;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: bold;
-  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  background: linear-gradient(90deg, #f1c40f, #1e7f38); /* Yellow to green gradient */
   -webkit-background-clip: text;
   color: transparent;
   padding: 10px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Navigation Styling */
@@ -39,34 +39,36 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   padding-top: 10px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
-  padding: 8px 16px;
+  padding: 12px 20px;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #f39c12; /* Golden Yellow for hover effect */
+  background-color: #f1c40f; /* Bright yellow on hover */
+  color: #333; /* Dark text when hovering */
 }
 
 /* Section Styling */
 section {
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
   margin-top: 20px;
 }
 
 h2 {
-  color: #27ae60; /* Green color for headers */
+  color: #1e7f38; /* Dark green for headings */
   font-size: 2rem;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 /* Product List Styling */
@@ -104,7 +106,7 @@ h2 {
 
 .product:hover {
   transform: scale(1.05); /* Zoom effect */
-  border-color: #f39c12; /* Golden Yellow on hover for effect */
+  border-color: #f1c40f; /* Yellow border on hover */
 }
 
 /* Contact Form Styling */
@@ -128,20 +130,21 @@ input, textarea, button {
 }
 
 button {
-  background-color: #27ae60; /* Green button */
+  background-color: #1e7f38; /* Green button */
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #2ecc71; /* Lighter green on hover */
+  background-color: #f1c40f; /* Yellow on hover */
+  color: #333; /* Dark text when hovering */
 }
 
 /* Footer Styling */
 footer {
   text-align: center;
-  background-color: #27ae60; /* Green footer */
+  background-color: #1e7f38; /* Green footer */
   color: white;
   padding: 20px;
   margin-top: 30px;
