@@ -14,7 +14,7 @@ body {
 
 /* Header Styling */
 header {
-  background-color: #1e7f38; /* Dark green */
+  background-color: #1e7f38; /* Dark green for the header */
   padding: 20px 0;
   text-align: center;
 }
@@ -22,16 +22,17 @@ header {
 /* Text-based logo styling */
 header h1 {
   font-family: 'Lucida Handwriting', cursive; 
-  font-size: 3rem;
-  color: #fff;
-  letter-spacing: 2px;
+  font-size: 3.5rem;
+  color: white; /* White color for the text */
+  letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: bold;
   background: linear-gradient(90deg, #f1c40f, #1e7f38); /* Yellow to green gradient */
   -webkit-background-clip: text;
   color: transparent;
   padding: 10px;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow to make it pop */
+  animation: fadeIn 2s ease-in-out; /* Smooth fade-in effect */
 }
 
 /* Navigation Styling */
@@ -206,5 +207,17 @@ footer {
   /* Adjust product width */
   .product {
     width: 45%;
+  }
+}
+
+/* Keyframe for the fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
