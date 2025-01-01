@@ -1,107 +1,174 @@
-/* Reset margins, paddings, and box-sizing for consistency */
-* {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f4e6; /* Light beige background */
-  color: #333; /* Dark text for readability */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* Header Styling */
 header {
-  background-color: #000; /* Black background */
-  padding: 20px 0;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 0;
   text-align: center;
 }
 
-/* Text-based logo styling */
-header h1 {
-  font-family: 'Ananda', cursive; /* Ananda Black font */
-  font-size: 4rem;
-  color: white; /* White color for the text */
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow to make it pop */
-  animation: fadeIn 2s ease-in-out; /* Smooth fade-in effect */
+header .logo {
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
 }
 
-/* Navigation Styling */
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding-top: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  text-decoration: none;
+  font-size: 1.1em;
 }
 
-nav ul li a:hover {
-  background-color: #f1c40f; /* Bright yellow on hover */
-  color: #333; /* Dark text when hovering */
-}
-
-/* Section Styling */
-section {
-  padding: 40px 20px;
+/* Hero Section */
+.hero {
+  background-color: #f1f1f1;
+  padding: 50px 0;
   text-align: center;
-  margin-top: 20px;
 }
 
-h2 {
-  color: #1e7f38; /* Dark green for headings */
-  font-size: 2rem;
+.hero h2 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Products Section */
+#products {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#products h2 {
+  font-size: 2.5em;
   margin-bottom: 20px;
-  font-weight: bold;
 }
 
-/* Product List Styling */
 .product-list {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .product {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  width: 250px;
-  text-align: center;
-  margin: 10px;
+  width: 30%;
+  box-sizing: border-box;
 }
 
 .product img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
   border-radius: 8px;
-  margin-bottom: 10px;
 }
 
 .product h3 {
-  color: #333; /* Dark text for product name */
-  font-size: 1.2rem;
   margin-top: 10px;
+  font-size: 1.5em;
 }
 
-.product:hover {
-  transform: scale(1.05); /* Zoom effect */
-  border-color: #f1c40f; /* Yellow border on hover */
+/* Contact Section */
+#contact {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group label {
+  font-size: 1.1em;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
 }
